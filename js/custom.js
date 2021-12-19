@@ -1,6 +1,6 @@
 // preLoader
 $(document).ready(function(){
-    $(".preloader").hide();
+    $("#preloader").fadeOut();
 });
 
 // Back to Top Button fadeIn & fadeOut
@@ -32,72 +32,67 @@ $(".back-to-top-btn").click(function(){
 
 
 
+// Animation
+$("#btn10").click(function(){
+    $(".child").animate({
+        left: "280px",
+        top: "0",
+    },800);
+    $(".child").animate({
+        left: "280px",
+        top: "280px",
+    },500);
+    $(".child").animate({
+        left: "0px",
+        top: "280px",
+    },800);
+    $(".child").animate({
+        left: "0px",
+        top: "0px",
+    },1200);
+});
+
+
+// fadeIn, fadeOut & fadeToggle
+$("#btn1").click(function(){
+    $("#para").fadeOut();
+});
+
+$("#btn2").click(function(){
+    $("#para").fadeIn();
+});
+
+$("#btn3").click(function(){
+    $("#para").fadeToggle();
+});
+
+
+// addClass, removeClass & toggleClass using jQuery
+$("#btn4").mouseover(function(){
+    $(".par").addClass("para");
+});
+
+$("#btn5").mouseover(function(){
+    $(".par").removeClass("para");
+});
+
+$("#btn6").dblclick(function(){
+    $(".par").toggleClass("para");
+});
 
 
 
+// SlidUp, SlideDown & Slide Toggle
+$("#btn7").click(function(){
+    $("#para").slideUp();
+});
 
 
-// // Animation
-// $("#btn10").click(function(){
-//     $(".child").animate({
-//         left: "280px",
-//         top: "0",
-//     },500);
-//     $(".child").animate({
-//         left: "280px",
-//         top: "280px",
-//     },500);
-//     $(".child").animate({
-//         left: "0px",
-//         top: "280px",
-//     },500);
-//     $(".child").animate({
-//         left: "0px",
-//         top: "0px",
-//     },500);
-// });
+$("#btn8").click(function(){
+    $("#para").slideDown();
+});
 
 
-// // fadeIn, fadeOut & fadeToggle
-// $("#btn1").click(function(){
-//     $("#para").fadeOut();
-// });
-
-// $("#btn2").click(function(){
-//     $("#para").fadeIn();
-// });
-
-// $("#btn3").click(function(){
-//     $("#para").fadeToggle();
-// });
-
-
-// // addClass, removeClass & toggleClass using jQuery
-// $("#btn4").mouseover(function(){
-//     $(".par").addClass("para");
-// });
-
-// $("#btn5").mouseover(function(){
-//     $(".par").removeClass("para");
-// });
-
-// $("#btn6").dblclick(function(){
-//     $(".par").toggleClass("para");
-// });
-
-
-
-// // SlidUp, SlideDown & Slide Toggle
-// $("#btn7").click(function(){
-//     $("#para").slideUp();
-// });
-
-
-// $("#btn8").click(function(){
-//     $("#para").slideDown();
-// });
-
-
-// $("#btn9").click(function(){
-//     $("#para").slideToggle();
-// });
+$("#btn9").click(function(){
+    $("#para").slideToggle();
+});

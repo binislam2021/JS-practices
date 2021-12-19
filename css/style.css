@@ -19,7 +19,7 @@ img{
 #preloader{
     width: 100%;
     height: 100vh;
-    background: #ad4af3;
+    background: #647f80;
     position: fixed;
     left: 0;
     top: 0;
@@ -64,6 +64,25 @@ img{
     top: 293px;
     left: 650px;
 }
+.circle3{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top-color: #000;
+    border-bottom-color: #005503;
+    border-right-color: #bdba16;
+    animation: ghuraghuri 2s linear infinite;
+    -webkit-animation: ghuraghuri 2s linear infinite;
+    animation-direction: reverse;
+    position: absolute;
+    top: 283px;
+    left: 640px;
+}
 
 @keyframes ghuraghuri{
     0%{
@@ -80,7 +99,7 @@ img{
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
     }
-};
+}
 
 nav{
     background: #6b6b5c;
@@ -215,22 +234,16 @@ button{
 .back-to-top-btn{
     width: 25px;
     height: 25px;
-    background: #000;
+    background: linear-gradient(yellow, purple);
     position: fixed;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
     z-index: 99;
     display: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-
-
-
-
-
-/* ===================
-     CSS Starts
-=================== */
-/* ===================
-     CSS Ends
-=================== */
