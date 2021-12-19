@@ -1,5 +1,5 @@
 // preLoader
-$(document).ready(function(){
+$(document).load(function(){
     $("#preloader").fadeOut();
 });
 
